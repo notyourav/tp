@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 5928;
+var viewWidth = 5922;
 var viewHeight = 285;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>include/mtx_vec.h</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 5924,-281 5924,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 5918,-281 5918,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="3626,-257.5 3626,-276.5 3721,-276.5 3721,-257.5 3626,-257.5"/>
-<text text-anchor="middle" x="3673.5" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/mtx_vec.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="3625,-257.5 3625,-276.5 3720,-276.5 3720,-257.5 3625,-257.5"/>
+<text text-anchor="middle" x="3672.5" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/mtx_vec.h</text>
 </a>
 </g>
 </g>
@@ -68,48 +68,48 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="c__m3d__g__lin_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="3472.5,-190.5 3472.5,-220.5 3606.5,-220.5 3606.5,-190.5 3472.5,-190.5"/>
-<text text-anchor="start" x="3480.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/SSystem/SComponent</text>
-<text text-anchor="middle" x="3539.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/c_m3d_g_lin.cpp</text>
+<polygon fill="white" stroke="black" points="3471.5,-190.5 3471.5,-220.5 3605.5,-220.5 3605.5,-190.5 3471.5,-190.5"/>
+<text text-anchor="start" x="3479.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/SSystem/SComponent</text>
+<text text-anchor="middle" x="3538.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/c_m3d_g_lin.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M3644.97,-253.33C3623.29,-243.7 3593.48,-230.47 3571.08,-220.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3643.74,-256.62 3654.3,-257.48 3646.58,-250.22 3643.74,-256.62"/>
+<path fill="none" stroke="midnightblue" d="M3643.97,-253.33C3622.29,-243.7 3592.48,-230.47 3570.08,-220.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3642.74,-256.62 3653.3,-257.48 3645.58,-250.22 3642.74,-256.62"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="functions_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="3624.5,-196 3624.5,-215 3722.5,-215 3722.5,-196 3624.5,-196"/>
-<text text-anchor="middle" x="3673.5" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">include/functions.h</text>
+<polygon fill="white" stroke="black" points="3623.5,-196 3623.5,-215 3721.5,-215 3721.5,-196 3623.5,-196"/>
+<text text-anchor="middle" x="3672.5" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">include/functions.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M3673.5,-247.32C3673.5,-236.5 3673.5,-223.4 3673.5,-215.01"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3670,-247.48 3673.5,-257.48 3677,-247.48 3670,-247.48"/>
+<path fill="none" stroke="midnightblue" d="M3672.5,-247.32C3672.5,-236.5 3672.5,-223.4 3672.5,-215.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3669,-247.48 3672.5,-257.48 3676,-247.48 3669,-247.48"/>
 </g>
 <!-- Node171 -->
 <g id="node49" class="node">
 <title>Node171</title>
 <g id="a_node49"><a xlink:href="J2DPane_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5785,-67.5 5785,-97.5 5920,-97.5 5920,-67.5 5785,-67.5"/>
-<text text-anchor="start" x="5793" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/JSystem/J2DGraph</text>
-<text text-anchor="middle" x="5852.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/J2DPane.h</text>
+<polygon fill="white" stroke="black" points="5779,-67.5 5779,-97.5 5914,-97.5 5914,-67.5 5779,-67.5"/>
+<text text-anchor="start" x="5787" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/JSystem/J2DGraph</text>
+<text text-anchor="middle" x="5846.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/J2DPane.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node171 -->
 <g id="edge50" class="edge">
 <title>Node1&#45;&gt;Node171</title>
-<path fill="none" stroke="midnightblue" d="M3731.26,-263.69C3978.23,-253.35 4969.57,-206.88 5776.5,-98 5779.16,-97.64 5781.87,-97.25 5784.61,-96.83"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3730.93,-260.2 3721.08,-264.12 3731.22,-267.2 3730.93,-260.2"/>
+<path fill="none" stroke="midnightblue" d="M3730.54,-263.67C3977.61,-253.25 4965.94,-206.64 5770.5,-98 5773.16,-97.64 5775.87,-97.25 5778.61,-96.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3730.2,-260.18 3720.35,-264.09 3730.49,-267.17 3730.2,-260.18"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -123,8 +123,8 @@ var sectionId = 'dynsection-1';
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M3633.64,-193.57C3627.6,-192.19 3621.41,-190.94 3615.5,-190 3390.94,-154.34 3117.71,-146.94 3015.09,-145.4"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3633.06,-197.02 3643.6,-195.96 3634.7,-190.22 3633.06,-197.02"/>
+<path fill="none" stroke="midnightblue" d="M3632.64,-193.57C3626.6,-192.19 3620.41,-190.94 3614.5,-190 3390.29,-154.38 3117.49,-146.96 3015.03,-145.41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3632.06,-197.03 3642.6,-195.96 3633.7,-190.22 3632.06,-197.03"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -725,34 +725,34 @@ var sectionId = 'dynsection-1';
 <!-- Node43 -->
 <g id="node43" class="node">
 <title>Node43</title>
-<g id="a_node43"><a xlink:href="JKRArchivePri_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5015,-67.5 5015,-97.5 5124,-97.5 5124,-67.5 5015,-67.5"/>
+<g id="a_node43"><a xlink:href="JKRAramStream_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="5015,-67.5 5015,-97.5 5126,-97.5 5126,-67.5 5015,-67.5"/>
 <text text-anchor="start" x="5023" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
-<text text-anchor="middle" x="5069.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRArchivePri.cpp</text>
+<text text-anchor="middle" x="5070.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRAramStream.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node43 -->
 <g id="edge42" class="edge">
 <title>Node4&#45;&gt;Node43</title>
-<path fill="none" stroke="midnightblue" d="M3025.18,-143.26C3301.36,-144.43 4605.48,-147.24 5005.5,-98 5008.55,-97.62 5011.67,-97.17 5014.81,-96.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3025.06,-139.76 3015.04,-143.22 3025.03,-146.76 3025.06,-139.76"/>
+<path fill="none" stroke="midnightblue" d="M3025.18,-143.24C3301.34,-144.29 4605.4,-146.57 5005.5,-98 5008.6,-97.62 5011.77,-97.17 5014.96,-96.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3025.05,-139.74 3015.04,-143.2 3025.03,-146.74 3025.05,-139.74"/>
 </g>
 <!-- Node44 -->
 <g id="node44" class="node">
 <title>Node44</title>
-<g id="a_node44"><a xlink:href="JKRAramStream_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5142,-67.5 5142,-97.5 5253,-97.5 5253,-67.5 5142,-67.5"/>
-<text text-anchor="start" x="5150" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
-<text text-anchor="middle" x="5197.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRAramStream.cpp</text>
+<g id="a_node44"><a xlink:href="JKRArchivePri_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="5144,-67.5 5144,-97.5 5253,-97.5 5253,-67.5 5144,-67.5"/>
+<text text-anchor="start" x="5152" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
+<text text-anchor="middle" x="5198.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRArchivePri.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node44 -->
 <g id="edge43" class="edge">
 <title>Node4&#45;&gt;Node44</title>
-<path fill="none" stroke="midnightblue" d="M3025.55,-142.53C3334.16,-139.69 4917.66,-123.94 5132.5,-98 5135.6,-97.63 5138.77,-97.17 5141.96,-96.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3025.08,-139.04 3015.11,-142.63 3025.15,-146.04 3025.08,-139.04"/>
+<path fill="none" stroke="midnightblue" d="M3025.6,-142.55C3334.5,-139.77 4919.5,-124.32 5134.5,-98 5137.55,-97.63 5140.67,-97.17 5143.82,-96.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3025.12,-139.05 3015.15,-142.64 3025.18,-146.05 3025.12,-139.05"/>
 </g>
 <!-- Node45 -->
 <g id="node45" class="node">
@@ -789,56 +789,56 @@ var sectionId = 'dynsection-1';
 <!-- Node47 -->
 <g id="node47" class="node">
 <title>Node47</title>
-<g id="a_node47"><a xlink:href="JKRCompArchive_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5525,-67.5 5525,-97.5 5640,-97.5 5640,-67.5 5525,-67.5"/>
+<g id="a_node47"><a xlink:href="JKRDecomp_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="5525,-67.5 5525,-97.5 5634,-97.5 5634,-67.5 5525,-67.5"/>
 <text text-anchor="start" x="5533" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
-<text text-anchor="middle" x="5582.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRCompArchive.cpp</text>
+<text text-anchor="middle" x="5579.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRDecomp.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node47 -->
 <g id="edge46" class="edge">
 <title>Node4&#45;&gt;Node47</title>
-<path fill="none" stroke="midnightblue" d="M3025.37,-142.7C3364.64,-140.67 5261.09,-128.01 5516.5,-98 5519.18,-97.69 5521.91,-97.31 5524.66,-96.89"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3025.31,-139.2 3015.33,-142.76 3025.36,-146.2 3025.31,-139.2"/>
+<path fill="none" stroke="midnightblue" d="M3025.38,-142.73C3364.67,-140.9 5261.24,-129.29 5516.5,-98 5519.29,-97.66 5522.13,-97.25 5524.99,-96.78"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3025.32,-139.23 3015.34,-142.79 3025.36,-146.23 3025.32,-139.23"/>
 </g>
 <!-- Node48 -->
 <g id="node48" class="node">
 <title>Node48</title>
 <g id="a_node48"><a xlink:href="JKRDisposer_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5658,-67.5 5658,-97.5 5767,-97.5 5767,-67.5 5658,-67.5"/>
-<text text-anchor="start" x="5666" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
-<text text-anchor="middle" x="5712.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRDisposer.cpp</text>
+<polygon fill="white" stroke="black" points="5652,-67.5 5652,-97.5 5761,-97.5 5761,-67.5 5652,-67.5"/>
+<text text-anchor="start" x="5660" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/JKernel</text>
+<text text-anchor="middle" x="5706.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JKRDisposer.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node48 -->
 <g id="edge47" class="edge">
 <title>Node4&#45;&gt;Node48</title>
-<path fill="none" stroke="midnightblue" d="M3025.3,-142.78C3374.59,-141.22 5380.17,-130.89 5649.5,-98 5652.29,-97.66 5655.13,-97.25 5657.99,-96.78"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3025.2,-139.28 3015.22,-142.83 3025.23,-146.28 3025.2,-139.28"/>
+<path fill="none" stroke="midnightblue" d="M3025.18,-142.78C3373.69,-141.21 5374.78,-130.82 5643.5,-98 5646.29,-97.66 5649.13,-97.25 5651.99,-96.78"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3025.11,-139.28 3015.12,-142.83 3025.14,-146.28 3025.11,-139.28"/>
 </g>
 <!-- Node4&#45;&gt;Node171 -->
 <g id="edge48" class="edge">
 <title>Node4&#45;&gt;Node171</title>
-<path fill="none" stroke="midnightblue" d="M3025.18,-142.71C3383.57,-140.61 5493.12,-127.09 5776.5,-98 5779.17,-97.73 5781.89,-97.41 5784.63,-97.05"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3025.07,-139.21 3015.09,-142.77 3025.11,-146.21 3025.07,-139.21"/>
+<path fill="none" stroke="midnightblue" d="M3025.35,-142.7C3383.8,-140.59 5487.8,-127.02 5770.5,-98 5773.17,-97.73 5775.89,-97.41 5778.63,-97.05"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3025.24,-139.21 3015.26,-142.76 3025.28,-146.21 3025.24,-139.21"/>
 </g>
 <!-- Node172 -->
 <g id="node50" class="node">
 <title>Node172</title>
 <g id="a_node50"><a xlink:href="J2DPane_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="5793,-0.5 5793,-30.5 5912,-30.5 5912,-0.5 5793,-0.5"/>
-<text text-anchor="start" x="5801" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/J2DGraph</text>
-<text text-anchor="middle" x="5852.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/J2DPane.cpp</text>
+<polygon fill="white" stroke="black" points="5787,-0.5 5787,-30.5 5906,-30.5 5906,-0.5 5787,-0.5"/>
+<text text-anchor="start" x="5795" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">libs/JSystem/J2DGraph</text>
+<text text-anchor="middle" x="5846.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/J2DPane.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node171&#45;&gt;Node172 -->
 <g id="edge49" class="edge">
 <title>Node171&#45;&gt;Node172</title>
-<path fill="none" stroke="midnightblue" d="M5852.5,-57.11C5852.5,-48.15 5852.5,-38.32 5852.5,-30.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="5849,-57.4 5852.5,-67.4 5856,-57.4 5849,-57.4"/>
+<path fill="none" stroke="midnightblue" d="M5846.5,-57.11C5846.5,-48.15 5846.5,-38.32 5846.5,-30.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="5843,-57.4 5846.5,-67.4 5850,-57.4 5843,-57.4"/>
 </g>
 </g>
 </svg>

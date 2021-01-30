@@ -1,8 +1,8 @@
 <map id="include/mtx_vec.h" name="include/mtx_vec.h">
-<area shape="rect" id="node1" title=" " alt="" coords="4840,5,4967,32"/>
-<area shape="rect" id="node2" href="$c__m3d__g__lin_8cpp.html" title=" " alt="" coords="4635,80,4814,121"/>
-<area shape="rect" id="node3" href="$functions_8h.html" title=" " alt="" coords="4838,87,4969,114"/>
-<area shape="rect" id="node49" href="$J2DPane_8h.html" title=" " alt="" coords="7719,244,7899,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="4839,5,4965,32"/>
+<area shape="rect" id="node2" href="$c__m3d__g__lin_8cpp.html" title=" " alt="" coords="4634,80,4813,121"/>
+<area shape="rect" id="node3" href="$functions_8h.html" title=" " alt="" coords="4837,87,4967,114"/>
+<area shape="rect" id="node49" href="$J2DPane_8h.html" title=" " alt="" coords="7711,244,7891,285"/>
 <area shape="rect" id="node4" href="$global_8h.html" title=" " alt="" coords="3915,169,4025,196"/>
 <area shape="rect" id="node5" href="$d__a__horse__static_8cpp.html" title=" " alt="" coords="5,244,145,285"/>
 <area shape="rect" id="node6" href="$d__a__item__static_8cpp.html" title=" " alt="" coords="170,244,303,285"/>
@@ -42,11 +42,11 @@
 <area shape="rect" id="node40" href="$JKRAramHeap_8cpp.html" title=" " alt="" coords="6184,244,6329,285"/>
 <area shape="rect" id="node41" href="$JKRAram_8cpp.html" title=" " alt="" coords="6353,244,6499,285"/>
 <area shape="rect" id="node42" href="$JKRAramPiece_8cpp.html" title=" " alt="" coords="6523,244,6668,285"/>
-<area shape="rect" id="node43" href="$JKRArchivePri_8cpp.html" title=" " alt="" coords="6692,244,6837,285"/>
-<area shape="rect" id="node44" href="$JKRAramStream_8cpp.html" title=" " alt="" coords="6861,244,7009,285"/>
+<area shape="rect" id="node43" href="$JKRAramStream_8cpp.html" title=" " alt="" coords="6692,244,6840,285"/>
+<area shape="rect" id="node44" href="$JKRArchivePri_8cpp.html" title=" " alt="" coords="6864,244,7009,285"/>
 <area shape="rect" id="node45" href="$JKRAssertHeap_8cpp.html" title=" " alt="" coords="7033,244,7179,285"/>
 <area shape="rect" id="node46" href="$JKRArchivePub_8cpp.html" title=" " alt="" coords="7203,244,7348,285"/>
-<area shape="rect" id="node47" href="$JKRCompArchive_8cpp.html" title=" " alt="" coords="7372,244,7525,285"/>
-<area shape="rect" id="node48" href="$JKRDisposer_8cpp.html" title=" " alt="" coords="7549,244,7695,285"/>
-<area shape="rect" id="node50" href="$J2DPane_8cpp.html" title=" " alt="" coords="7729,333,7888,375"/>
+<area shape="rect" id="node47" href="$JKRDecomp_8cpp.html" title=" " alt="" coords="7372,244,7517,285"/>
+<area shape="rect" id="node48" href="$JKRDisposer_8cpp.html" title=" " alt="" coords="7541,244,7687,285"/>
+<area shape="rect" id="node50" href="$J2DPane_8cpp.html" title=" " alt="" coords="7721,333,7880,375"/>
 </map>
