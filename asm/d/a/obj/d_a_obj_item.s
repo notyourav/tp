@@ -856,7 +856,7 @@ lbl_8015B9B8:
 /* 8015B9C4 00158904  38 63 DD 88 */	addi r3, r3, lbl_803ADD88@l
 /* 8015B9C8 00158908  7C 83 00 2E */	lwzx r4, r3, r0
 /* 8015B9CC 0015890C  38 7F 05 6C */	addi r3, r31, 0x56c
-/* 8015B9D0 00158910  4B ED 14 ED */	bl dComIfG_resLoad
+/* 8015B9D0 00158910  4B ED 14 ED */	bl dComIfG_resLoad__FP30request_of_phase_process_classPCc
 /* 8015B9D4 00158914  7C 7D 1B 78 */	mr r29, r3
 /* 8015B9D8 00158918  2C 1D 00 04 */	cmpwi r29, 4
 /* 8015B9DC 0015891C  40 82 00 44 */	bne lbl_8015BA20

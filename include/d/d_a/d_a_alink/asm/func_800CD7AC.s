@@ -61,7 +61,7 @@ lbl_800CD884:
 lbl_800CD890:
 /* 800CD890 000CA7D0  38 7F 06 2C */ addi r3, r31, 0x62c
 /* 800CD894 000CA7D4  80 9F 06 34 */ lwz r4, 0x634(r31)
-/* 800CD898 000CA7D8  4B F5 F7 71 */ bl dComIfG_resDelete
+/* 800CD898 000CA7D8  4B F5 F7 71 */ bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 800CD89C 000CA7DC  80 7F 06 38 */ lwz r3, 0x638(r31)
 /* 800CD8A0 000CA7E0  28 03 00 00 */ cmplwi r3, 0
 /* 800CD8A4 000CA7E4  41 82 00 08 */ beq lbl_800CD8AC
@@ -69,7 +69,7 @@ lbl_800CD890:
 lbl_800CD8AC:
 /* 800CD8AC 000CA7EC  38 7F 06 3C */ addi r3, r31, 0x63c
 /* 800CD8B0 000CA7F0  80 9F 06 44 */ lwz r4, 0x644(r31)
-/* 800CD8B4 000CA7F4  4B F5 F7 55 */ bl dComIfG_resDelete
+/* 800CD8B4 000CA7F4  4B F5 F7 55 */ bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 800CD8B8 000CA7F8  80 7F 06 48 */ lwz r3, 0x648(r31)
 /* 800CD8BC 000CA7FC  28 03 00 00 */ cmplwi r3, 0
 /* 800CD8C0 000CA800  41 82 00 08 */ beq lbl_800CD8C8

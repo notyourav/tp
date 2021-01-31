@@ -339,6 +339,7 @@ private:
 class dStage_roomControl_c {
 public:
     void init(void);
+    void initZone();
 
 private:
     u8 field_0x0[164];

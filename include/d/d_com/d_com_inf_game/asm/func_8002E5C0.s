@@ -14,7 +14,7 @@
 /* 8002E5F4 0002B534  40 82 00 2C */ bne lbl_8002E620
 lbl_8002E5F8:
 /* 8002E5F8 0002B538  7F E3 FB 78 */ mr r3, r31
-/* 8002E5FC 0002B53C  4B FF F7 41 */ bl dComIfGs_getSelectMixItemNoArrowIndex
+/* 8002E5FC 0002B53C  4B FF F7 41 */ bl dComIfGs_getSelectMixItemNoArrowIndex__Fi
 /* 8002E600 0002B540  38 03 FF F1 */ addi r0, r3, -15
 /* 8002E604 0002B544  54 04 06 3E */ clrlwi r4, r0, 0x18
 /* 8002E608 0002B548  3C 60 80 40 */ lis r3, g_dComIfG_gameInfo@ha

@@ -9,27 +9,37 @@
 #include "m_Do/m_Do_controller_pad/m_Do_controller_pad.h"
 #include "m_Do/m_Do_ext/m_Do_ext.h"
 
-// memset first arg is wrong
-#ifdef NONMATCHING
 void dComIfG_play_c::ct(void) {
     field_0x4e0c = 0;
     field_0x4e04 = 0;
     field_0x4e0d = 0;
 
-    memset((void*)(this + 0x5024), 0, 8);
+    memset(&_5024, 0, 8);
     init();
 }
-#else
-asm void dComIfG_play_c::ct(void) {
-    nofralloc
-#include "d/d_com/d_com_inf_game/asm/func_8002B1DC.s"
-}
-#endif
 
+// scheduling
+#ifdef NONMATCHING
+void dComIfG_play_c::init() {
+    _4e74 = 0;
+    _4e78 = -1;
+
+    mCameraInfo._0 = 0;
+
+    for (int i = 0; i < 2; ++i) {
+        _4e7c[i] = 0;
+    }
+    if (field_0x4f47[10] == 2) {
+        dComIfGp_roomControl_initZone();
+    }
+    field_0x4f47[10] = 0;
+}
+#else
 asm void dComIfG_play_c::init(void) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002B22C.s"
 }
+#endif
 
 void dComIfGp_checkItemGet(u8 param_1, int param_2) {
     checkItemGet(param_1, param_2);
@@ -242,7 +252,7 @@ asm void func_8002CEB4(void) {
 
 // dComIfG_resLoad__FP30request_of_phase_process_classPCc
 // dComIfG_resLoad(request_of_phase_process_class*, const char*)
-asm void dComIfG_resLoad(void) {
+asm void dComIfG_resLoad(request_of_phase_process_class*, const char*) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002CEBC.s"
 }  //
@@ -270,14 +280,14 @@ asm void func_8002CFB8(void) {
 
 // dComIfG_resLoad__FP30request_of_phase_process_classPCcP7JKRHeap
 // dComIfG_resLoad(request_of_phase_process_class*, const char*, JKRHeap*)
-asm void dComIfG_resLoad_X1_(void) {
+asm u32 dComIfG_resLoad(request_of_phase_process_class*, const char*, JKRHeap*) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002CFC0.s"
 }
 
 // dComIfG_resDelete__FP30request_of_phase_process_classPCc
 // dComIfG_resDelete(request_of_phase_process_class*, const char*)
-asm void dComIfG_resDelete(void) {
+asm void dComIfG_resDelete(request_of_phase_process_class*, const char*) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002D008.s"
 }
@@ -478,7 +488,7 @@ void dComIfGs_setMixItemIndex(int i_no, u8 item_index) {
 }
 
 // dComIfGs_getSelectMixItemNoArrowIndex__Fi
-// dComIfGs_getSelectMixItemNoArrowIndex(int)
+// dComIfGs_getSelectMixItemNoArrowIndex__Fi(int)
 
 // close
 #ifdef NONMATCHING
@@ -488,14 +498,14 @@ u8 dComIfGs_getSelectMixItemNoArrowIndex(int p1) {
 
     if (item_index < 0xf || item_index < 0x12) {
         return item_index;
-    }
-    if (mix_index == 255 || mix_index < 0xf || mix_index < 0x12) {
-        item_index = 255;
+    } else if (mix_index != 255 && mix_index >= 0xf && mix_index < 0x12) {
         return item_index;
+    } else {
+        return 255;
     }
 }
 #else
-asm void dComIfGs_getSelectMixItemNoArrowIndex(void) {
+asm u8 dComIfGs_getSelectMixItemNoArrowIndex(int p1) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002DD3C.s"
 }
@@ -744,8 +754,8 @@ asm void dComIfGs_setWarpItemData_X1_(void) {
 
 void dComIfGs_setLastWarpMarkItemData(const char* stage, cXyz pos, s16 angle, s8 room, u8 unk1,
                                       u8 unk2) {
-    g_dComIfG_gameInfo.getSaveFile().getPlayerLastMarkInfo().setWarpItemData(stage, pos, angle,
-                                                                             room, unk1, unk2);
+    g_dComIfG_gameInfo.getPlayer().getPlayerLastMarkInfo().setWarpItemData(stage, pos, angle, room,
+                                                                           unk1, unk2);
 }
 
 const char* dComIfGs_getWarpStageName(void) {
@@ -766,36 +776,40 @@ int dComIfGs_getWarpRoomNo(void) {
     return dComIfGs_getLastWarpMarkRoomNo();
 }
 
-// dComIfGs_getWarpMarkFlag__Fv
-// dComIfGs_getWarpMarkFlag(void)
-asm void dComIfGs_getWarpMarkFlag(void) {
-    nofralloc
-#include "d/d_com/d_com_inf_game/asm/func_8002F2F0.s"
+u8 dComIfGs_getWarpMarkFlag(void) {
+    return dComIfGs_getLastWarpAcceptStage() >= 0;
 }
 
-void dComIfGs_setWarpMarkFlag(void) {
-    return;
+void dComIfGs_setWarpMarkFlag(void) {}
+
+
+dComIfG_resLoader_c::dComIfG_resLoader_c() {
+    mRes = NULL;
+    mPhase.mPhaseStep = 0;
+    _c = 0;
 }
 
-// __ct__19dComIfG_resLoader_cFv
-// dComIfG_resLoader_c::dComIfG_resLoader_c(void)
-asm void func_8002F314(void) {
-    nofralloc
-#include "d/d_com/d_com_inf_game/asm/func_8002F314.s"
+dComIfG_resLoader_c::~dComIfG_resLoader_c() {
+    if (mRes == NULL)
+        return;
+
+    for (int i = _c; i >= 0; --i) {
+        dComIfG_resDelete(&mPhase, mRes[i]);
+        mPhase.mPhaseStep = 2;
+    }
+
 }
 
-// __dt__19dComIfG_resLoader_cFv
-// dComIfG_resLoader_c::~dComIfG_resLoader_c(void)
-asm void func_8002F328(void) {
-    nofralloc
-#include "d/d_com/d_com_inf_game/asm/func_8002F328.s"
-}
+s32 dComIfG_resLoader_c::load(const char** res, JKRHeap* heap) {
+    mRes = res;
 
-// load__19dComIfG_resLoader_cFPPCcP7JKRHeap
-// dComIfG_resLoader_c::load(const char**, JKRHeap*)
-asm void func_8002F3B4(void) {
-    nofralloc
-#include "d/d_com/d_com_inf_game/asm/func_8002F3B4.s"
+    s32 result = dComIfG_resLoad(&mPhase, mRes[_c], heap);
+    if ((result == 4) && mRes[_c + 1][0] != '\0') {
+        _c++;
+        mPhase.mPhaseStep = 0;
+        return 0;
+    }
+    return result;
 }
 
 // dComIfG_getStageRes__FPCc
@@ -814,7 +828,7 @@ asm void dComIfG_getOldStageRes(void) {
 
 // dComIfG_getRoomArcName__Fi
 // dComIfG_getRoomArcName(int)
-asm void dComIfG_getRoomArcName(void) {
+asm const char* dComIfG_getRoomArcName(int i_room) {
     nofralloc
 #include "d/d_com/d_com_inf_game/asm/func_8002F4BC.s"
 }

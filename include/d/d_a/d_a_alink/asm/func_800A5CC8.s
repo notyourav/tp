@@ -178,7 +178,7 @@ lbl_800A5F34:
 /* 800A5F58 000A2E98  38 7F 06 2C */ addi r3, r31, 0x62c
 /* 800A5F5C 000A2E9C  80 9F 06 34 */ lwz r4, 0x634(r31)
 /* 800A5F60 000A2EA0  80 BF 06 38 */ lwz r5, 0x638(r31)
-/* 800A5F64 000A2EA4  4B F8 70 5D */ bl dComIfG_resLoad_X1_
+/* 800A5F64 000A2EA4  4B F8 70 5D */ bl dComIfG_resLoad__FP30request_of_phase_process_classPCcP7JKRHeap
 /* 800A5F68 000A2EA8  2C 03 00 04 */ cmpwi r3, 4
 /* 800A5F6C 000A2EAC  41 82 00 0C */ beq lbl_800A5F78
 /* 800A5F70 000A2EB0  38 60 00 00 */ li r3, 0
@@ -193,7 +193,7 @@ lbl_800A5F78:
 /* 800A5F90 000A2ED0  38 7F 06 3C */ addi r3, r31, 0x63c
 /* 800A5F94 000A2ED4  80 9F 06 44 */ lwz r4, 0x644(r31)
 /* 800A5F98 000A2ED8  80 BF 06 48 */ lwz r5, 0x648(r31)
-/* 800A5F9C 000A2EDC  4B F8 70 25 */ bl dComIfG_resLoad_X1_
+/* 800A5F9C 000A2EDC  4B F8 70 25 */ bl dComIfG_resLoad__FP30request_of_phase_process_classPCcP7JKRHeap
 /* 800A5FA0 000A2EE0  2C 03 00 04 */ cmpwi r3, 4
 /* 800A5FA4 000A2EE4  41 82 00 0C */ beq lbl_800A5FB0
 /* 800A5FA8 000A2EE8  38 60 00 00 */ li r3, 0

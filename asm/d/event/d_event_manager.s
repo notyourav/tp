@@ -404,7 +404,7 @@ dEvent_manager_c_NS_roomInit:
 /* 8004692C 0004386C  7F FF 07 74 */	extsb r31, r31
 lbl_80046930:
 /* 80046930 00043870  7F E3 FB 78 */	mr r3, r31
-/* 80046934 00043874  4B FE 8B 89 */	bl dComIfG_getRoomArcName
+/* 80046934 00043874  4B FE 8B 89 */	bl dComIfG_getRoomArcName__Fi
 /* 80046938 00043878  7C 64 1B 78 */	mr r4, r3
 /* 8004693C 0004387C  38 61 00 08 */	addi r3, r1, 8
 /* 80046940 00043880  48 32 21 ED */	bl strcpy

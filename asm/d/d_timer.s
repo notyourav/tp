@@ -14,7 +14,7 @@ dTimer_c_NS__create:
 /* 8025CA24 00259964  38 7F 01 08 */	addi r3, r31, 0x108
 /* 8025CA28 00259968  3C 80 80 3A */	lis r4, lbl_8039A3D8@ha
 /* 8025CA2C 0025996C  38 84 A3 D8 */	addi r4, r4, lbl_8039A3D8@l
-/* 8025CA30 00259970  4B DD 04 8D */	bl dComIfG_resLoad
+/* 8025CA30 00259970  4B DD 04 8D */	bl dComIfG_resLoad__FP30request_of_phase_process_classPCc
 /* 8025CA34 00259974  2C 03 00 04 */	cmpwi r3, 4
 /* 8025CA38 00259978  40 82 04 B4 */	bne lbl_8025CEEC
 /* 8025CA3C 0025997C  7F E3 FB 78 */	mr r3, r31
@@ -766,7 +766,7 @@ lbl_8025D4D4:
 /* 8025D4E8 0025A428  38 7F 01 08 */	addi r3, r31, 0x108
 /* 8025D4EC 0025A42C  3C 80 80 3A */	lis r4, lbl_8039A3D8@ha
 /* 8025D4F0 0025A430  38 84 A3 D8 */	addi r4, r4, lbl_8039A3D8@l
-/* 8025D4F4 0025A434  4B DC FB 15 */	bl dComIfG_resDelete
+/* 8025D4F4 0025A434  4B DC FB 15 */	bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 8025D4F8 0025A438  38 00 00 00 */	li r0, 0
 /* 8025D4FC 0025A43C  3C 60 80 40 */	lis r3, g_dComIfG_gameInfo@ha
 /* 8025D500 0025A440  38 63 61 C0 */	addi r3, r3, g_dComIfG_gameInfo@l

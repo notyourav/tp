@@ -113,7 +113,7 @@ asm void dStage_roomControl_c::init(void) {
 
 // initZone__20dStage_roomControl_cFv
 // dStage_roomControl_c::initZone(void)
-asm void init__20dStage_roomControl_cFvZone(void) {
+asm void dStage_roomControl_c::initZone(void) {
     nofralloc
 #include "d/d_stage/asm/func_80024338.s"
 }

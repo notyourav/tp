@@ -2,6 +2,7 @@
 #define D_COM_INF_GAME_H_
 
 #include "SComponent/c_xyz.h"
+#include "SComponent/c_phase.h"
 #include "d/d_attention/d_attention.h"
 #include "d/d_bg/d_bg_s/d_bg_s.h"
 #include "d/d_bg/d_bg_w/d_bg_w_base/d_bg_w_base.h"
@@ -13,6 +14,7 @@
 #include "d/d_save/d_save/d_save.h"
 #include "d/d_stage/d_stage.h"
 #include "d/d_vibration/d_vibration.h"
+#include "d/d_resource/d_resource.h"
 
 #pragma pack(push, 1)
 struct item_func {
@@ -42,8 +44,10 @@ class dComIfG_camera_info_class {
 public:
     dComIfG_camera_info_class(void);
 
+    u32 _0;
+
 private:
-    u8 field_0x0[12];
+    u8 _4[8];
     cXyz field_0xc;
     cXyz field_0x18;
 };
@@ -69,7 +73,7 @@ private:
 };
 #pragma pack(pop)
 
-#pragma pack(push, 1)
+//#pragma pack(push, 1)
 class dComIfG_play_c {
 public:
     void ct(void);
@@ -152,14 +156,11 @@ private:
     /* 0x03F1E */ dStage_nextStage_c mNextStage;
     /* 0x03F2F */ u8 padding;
     /* 0x03F30 */ dStage_stageDt_c mStageData;
-    u8 field_[0x9c];
+    u8 field_[0xf4];
     /* 0x03F34 */ dStage_roomControl_c mRoomControl;
     /* 0x03FD8 */ dEvt_control_c mEventControl;
-    /* 0x0409C */ u8 field_0x409c[0x24];
     /* 0x040C0 */ dEvent_manager_c mEventManager;
-    /* 0x0475B */ u8 field_0x475B[0x2D];
-    /* 0x04788 */ void* vtable;
-    /* 0x0478C */ u8 field_0x478c[0x1C];
+    /* 0x0478C */ u8 field_0x478c[0x18];
     /* 0x047A8 */ dAttDraw_c mAttentionDraw;
     /* 0x0490C */ u8 field_0x490c[0x1AC];
     /* 0x04AB8 */ dAttList_c mAttentionList1;
@@ -168,7 +169,7 @@ private:
     /* 0x04B74 */ u8 field_0x4b74[0x44];
     /* 0x04BB8 */ dAttList_c mAttentionList3;
     /* 0x04BCC */ u8 field_0x4bcc[0xBC];
-    /* 0x04c88 */ void* vtable2;
+    /* 0x04C88 */ void* vtable2;
     /* 0x04C8C */ u8 field_0x4c8c[0x55];
     /* 0x04CE1 */ u8 field_0x4ce1[0x37];
     /* 0x04D18 */ dVibration_c mVibration;
@@ -179,8 +180,11 @@ private:
     /* 0x04E0D */ u8 field_0x4e0d;
     /* 0x04E0E */ u8 field_0x4e0e[0x2];
     /* 0x04E10 */ dDlst_window_c mDrawlistWindow;
-    /* 0x04ED4 */ dComIfG_camera_info_class mCameraInfo;
-    /* 0x04E60 */ u8 field_0x4e60[0x28];
+    /* 0x04E3C */ dComIfG_camera_info_class mCameraInfo;
+    /* 0x04E60 */ u8 field_0x4e60[0x14];
+    /* 0x04E74 */ u32 _4e74;
+    /* 0x04E78 */ s8 _4e78;
+    /* 0x04E7C */ u32 _4e7c[3];
     /* 0x04E88 */ item_func give_item;
     /* 0x04EC0 */ u8 field_0x4ec0[0x24];
     /* 0x04EE4 */ u8 mRStatus;
@@ -209,8 +213,11 @@ private:
     /* 0x05000 */ int mTimerLimitTimeMs;
     /* 0x05004 */ int mTimerMode;
     /* 0x05008 */ u8 mTimerType;
+    /* 0x05009 */ u8 _05009[0x1b];
+    /* 0x05024 */ u32 _5024;
+    /* 0x05028 */ u32 _5028;
 };
-#pragma pack(pop)
+//#pragma pack(pop)
 
 #pragma pack(push, 1)
 class dComIfG_inf_c {
@@ -244,7 +251,7 @@ private:
     /* 0x00F30 */ u32 field_0xf34;
     u8 unk[3];
     /* 0x00F34 */ dComIfG_play_c play;
-    /* 0x05F60 */ u8 field_0x5f60[0x33];
+    /* 0x05F60 */ u8 field_0x5f60[0x10];
     /* 0x05F70 */ dDlst_list_c draw_list_list;
     /* 0x1C110 */ u8 field_0x1C114[0x1E8];
     /* 0x1C2F8 */ dRes_info_c resource_info1;
@@ -267,6 +274,19 @@ private:
     /* 0x1DE0B */ u8 unk34[0x5];  // probably padding
 };
 #pragma pack(pop)
+
+class dComIfG_resLoader_c {
+public:
+    dComIfG_resLoader_c();
+    ~dComIfG_resLoader_c();
+
+    s32 load(const char** res, JKRHeap* heap);
+
+private:
+    const char** mRes;
+    request_of_phase_process_class mPhase;
+    u8 _c;
+};
 
 extern dComIfG_inf_c g_dComIfG_gameInfo;
 
@@ -479,6 +499,10 @@ inline void dComIfGp_setItem(u8 slot, u8 i_no) {
 inline u32 dComIfGp_getNowVibration(void) {
     return g_dComIfG_gameInfo.getPlay().getNowVibration();
 }
+inline void dComIfGp_roomControl_initZone() {
+    g_dComIfG_gameInfo.getPlay().getRoomControl().initZone();
+}
+
 
 extern "C" {
 void dComIfGs_staffroll_next_go(void);

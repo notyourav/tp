@@ -229,7 +229,7 @@ dGameover_c_NS__create:
 /* 8019B05C 00197F9C  38 7D 01 08 */	addi r3, r29, 0x108
 /* 8019B060 00197FA0  3C 80 80 39 */	lis r4, lbl_80394C28@ha
 /* 8019B064 00197FA4  38 84 4C 28 */	addi r4, r4, lbl_80394C28@l
-/* 8019B068 00197FA8  4B E9 1E 55 */	bl dComIfG_resLoad
+/* 8019B068 00197FA8  4B E9 1E 55 */	bl dComIfG_resLoad__FP30request_of_phase_process_classPCc
 /* 8019B06C 00197FAC  3C 80 80 40 */	lis r4, g_dComIfG_gameInfo@ha
 /* 8019B070 00197FB0  38 84 61 C0 */	addi r4, r4, g_dComIfG_gameInfo@l
 /* 8019B074 00197FB4  88 04 5E B5 */	lbz r0, 0x5eb5(r4)
@@ -837,7 +837,7 @@ lbl_8019B8FC:
 /* 8019B914 00198854  38 7E 01 08 */	addi r3, r30, 0x108
 /* 8019B918 00198858  3C 80 80 39 */	lis r4, lbl_80394C28@ha
 /* 8019B91C 0019885C  38 84 4C 28 */	addi r4, r4, lbl_80394C28@l
-/* 8019B920 00198860  4B E9 16 E9 */	bl dComIfG_resDelete
+/* 8019B920 00198860  4B E9 16 E9 */	bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 8019B924 00198864  38 60 00 01 */	li r3, 1
 /* 8019B928 00198868  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8019B92C 0019886C  83 C1 00 08 */	lwz r30, 8(r1)

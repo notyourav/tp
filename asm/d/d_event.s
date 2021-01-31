@@ -2289,7 +2289,7 @@ lbl_80043378:
 lbl_8004337C:
 /* 8004337C 000402BC  88 6D 87 E4 */	lbz r3, lbl_80450D64-_SDA_BASE_(r13)
 /* 80043380 000402C0  7C 63 07 74 */	extsb r3, r3
-/* 80043384 000402C4  4B FE C1 39 */	bl dComIfG_getRoomArcName
+/* 80043384 000402C4  4B FE C1 39 */	bl dComIfG_getRoomArcName__Fi
 /* 80043388 000402C8  7F C4 F3 78 */	mr r4, r30
 /* 8004338C 000402CC  3C A0 80 40 */	lis r5, g_dComIfG_gameInfo@ha
 /* 80043390 000402D0  38 A5 61 C0 */	addi r5, r5, g_dComIfG_gameInfo@l

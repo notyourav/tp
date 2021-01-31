@@ -425,7 +425,7 @@ lbl_80259A0C:
 /* 80259A0C 0025694C  38 6D 8B 78 */	addi r3, r13, lbl_804510F8-_SDA_BASE_
 /* 80259A10 00256950  7C 63 F2 14 */	add r3, r3, r30
 /* 80259A14 00256954  7C 9C E8 2E */	lwzx r4, r28, r29
-/* 80259A18 00256958  4B DD 35 F1 */	bl dComIfG_resDelete
+/* 80259A18 00256958  4B DD 35 F1 */	bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 80259A1C 0025695C  3B 5A 00 01 */	addi r26, r26, 1
 /* 80259A20 00256960  3B BD 00 04 */	addi r29, r29, 4
 /* 80259A24 00256964  3B DE 00 08 */	addi r30, r30, 8
@@ -1541,7 +1541,7 @@ lbl_8025AA58:
 /* 8025AA58 00257998  38 6D 8B 78 */	addi r3, r13, lbl_804510F8-_SDA_BASE_
 /* 8025AA5C 0025799C  7C 63 F2 14 */	add r3, r3, r30
 /* 8025AA60 002579A0  7C 9C F8 2E */	lwzx r4, r28, r31
-/* 8025AA64 002579A4  4B DD 24 59 */	bl dComIfG_resLoad
+/* 8025AA64 002579A4  4B DD 24 59 */	bl dComIfG_resLoad__FP30request_of_phase_process_classPCc
 /* 8025AA68 002579A8  2C 03 00 04 */	cmpwi r3, 4
 /* 8025AA6C 002579AC  41 82 00 08 */	beq lbl_8025AA74
 /* 8025AA70 002579B0  3B A0 00 00 */	li r29, 0

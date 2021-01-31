@@ -9,7 +9,7 @@ daItemBase_c_NS_DeleteBase:
 /* 80144728 00141668  7C 08 02 A6 */	mflr r0
 /* 8014472C 0014166C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80144730 00141670  38 63 05 6C */	addi r3, r3, 0x56c
-/* 80144734 00141674  4B EE 88 D5 */	bl dComIfG_resDelete
+/* 80144734 00141674  4B EE 88 D5 */	bl dComIfG_resDelete__FP30request_of_phase_process_classPCc
 /* 80144738 00141678  38 60 00 01 */	li r3, 1
 /* 8014473C 0014167C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80144740 00141680  7C 08 03 A6 */	mtlr r0
