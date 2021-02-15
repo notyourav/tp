@@ -80,6 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__kankyo_8h_source.html">d/d_kankyo/d_kankyo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JMath_8h_source.html">JSystem/JMath/JMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Z2SeMgr_8h_source.html">Z2AudioLib/Z2SeMgr/Z2SeMgr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/d_com/d_com_inf_game/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
@@ -449,8 +450,8 @@ Functions</h2></td></tr>
 <tr class="separator:aba007816dbbc70c1a67b11637aae766e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8d2a7855a4a95c0b55edd5e3138f98e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae8d2a7855a4a95c0b55edd5e3138f98e">func_80361D60</a> (void)</td></tr>
 <tr class="separator:ae8d2a7855a4a95c0b55edd5e3138f98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a826f9a941a67c8c3dc1b68237c513a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a4a826f9a941a67c8c3dc1b68237c513a">func_803620AC</a> (void)</td></tr>
-<tr class="separator:a4a826f9a941a67c8c3dc1b68237c513a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceecfa63d9a2ec2e63e307ac931947a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aceecfa63d9a2ec2e63e307ac931947a5">__cvt_fp2unsigned</a> (void)</td></tr>
+<tr class="separator:aceecfa63d9a2ec2e63e307ac931947a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb91de82e7a9a318c1c59b0f27919953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#adb91de82e7a9a318c1c59b0f27919953">GB_MAPLE_COL_CHANGE</a> (void)</td></tr>
 <tr class="separator:adb91de82e7a9a318c1c59b0f27919953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0adf4b91773bba1161b7a77cf9e410e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a0adf4b91773bba1161b7a77cf9e410e2">GFSetFog</a> (void)</td></tr>
@@ -513,8 +514,6 @@ Functions</h2></td></tr>
 <tr class="separator:a9000e5972106b04b3bf47d5866e19854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc9c6c4fe94ee8124645328fadd2ac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#adbc9c6c4fe94ee8124645328fadd2ac6">mDoExt_createSolidHeapFromGameToCurrent_X1_</a> (void)</td></tr>
 <tr class="separator:adbc9c6c4fe94ee8124645328fadd2ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17074bf6dd8ad56e64a255f585c1d8d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a17074bf6dd8ad56e64a255f585c1d8d8">mDoExt_destroySolidHeap</a> (void)</td></tr>
-<tr class="separator:a17074bf6dd8ad56e64a255f585c1d8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a915450f1269af3c13bda0a62506ce30c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a915450f1269af3c13bda0a62506ce30c">mDoExt_J3DModel__create</a> (void)</td></tr>
 <tr class="separator:a915450f1269af3c13bda0a62506ce30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89dc3a59e71c6060dafc0380fc5ffb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a89dc3a59e71c6060dafc0380fc5ffb11">mDoExt_modelUpdateDL</a> (void)</td></tr>
@@ -843,6 +842,24 @@ Functions</h2></td></tr>
 <tr class="separator:aedc40c33594590344c8e14db67051cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aceecfa63d9a2ec2e63e307ac931947a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceecfa63d9a2ec2e63e307ac931947a5">&#9670;&nbsp;</a></span>__cvt_fp2unsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cvt_fp2unsigned </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9be61384cd32b9eb630f88dfef31d461"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9be61384cd32b9eb630f88dfef31d461">&#9670;&nbsp;</a></span>__dl__FPv()</h2>
 
@@ -4713,24 +4730,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a826f9a941a67c8c3dc1b68237c513a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a826f9a941a67c8c3dc1b68237c513a">&#9670;&nbsp;</a></span>func_803620AC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void func_803620AC </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa9d1984220da19d944bf02b189379c9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9d1984220da19d944bf02b189379c9f">&#9670;&nbsp;</a></span>func_8036608C()</h2>
 
@@ -5457,24 +5456,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void mDoExt_createSolidHeapFromGameToCurrent_X1_ </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a17074bf6dd8ad56e64a255f585c1d8d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17074bf6dd8ad56e64a255f585c1d8d8">&#9670;&nbsp;</a></span>mDoExt_destroySolidHeap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mDoExt_destroySolidHeap </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
